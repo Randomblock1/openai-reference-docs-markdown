@@ -16,13 +16,11 @@ Install the required Python package:
 
 ```bash
 uv venv
-./venv/Scripts/activate
+.venv/Scripts/activate
 uv sync
 ```
 
-### Node.js Dependencies
-
-Install the required Node.js packages:
+### JS Dependencies
 
 ```bash
 bun install
@@ -36,7 +34,7 @@ Run the Python utility to download the latest OpenAI documentation:
 
 ```bash
 # download and update the openai-docs-reference.js file
-python js_downloader.py
+uv run js_downloader.py
 ```
 
 after running the file, the folder downloaded_files is created by seleniumbase - it can be deleted.
